@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9246F6F728DDDB190045F89D /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246F6F628DDDB190045F89D /* ContactRowView.swift */; };
 		9292F5CE28DCB46A00C292DA /* ContactListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9292F5CD28DCB46A00C292DA /* ContactListApp.swift */; };
 		9292F5D028DCB46A00C292DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9292F5CF28DCB46A00C292DA /* ContentView.swift */; };
 		9292F5D228DCB46C00C292DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9292F5D128DCB46C00C292DA /* Assets.xcassets */; };
 		9292F5D528DCB46C00C292DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9292F5D428DCB46C00C292DA /* Preview Assets.xcassets */; };
+		9292F5DC28DCB48B00C292DA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9292F5DB28DCB48B00C292DA /* DataStore.swift */; };
+		9292F5DE28DCB4B200C292DA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9292F5DD28DCB4B200C292DA /* Person.swift */; };
+		9292F5E028DCB65700C292DA /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9292F5DF28DCB65700C292DA /* ContactsView.swift */; };
+		9292F5E228DCB66A00C292DA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9292F5E128DCB66A00C292DA /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9292F5CA28DCB46A00C292DA /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9246F6F628DDDB190045F89D /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
+		9292F5CA28DCB46A00C292DA /* ContactListSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9292F5CD28DCB46A00C292DA /* ContactListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListApp.swift; sourceTree = "<group>"; };
 		9292F5CF28DCB46A00C292DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9292F5D128DCB46C00C292DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9292F5D428DCB46C00C292DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9292F5DB28DCB48B00C292DA /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		9292F5DD28DCB4B200C292DA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9292F5DF28DCB65700C292DA /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		9292F5E128DCB66A00C292DA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +53,7 @@
 		9292F5CB28DCB46A00C292DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9292F5CA28DCB46A00C292DA /* ContactList.app */,
+				9292F5CA28DCB46A00C292DA /* ContactListSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +63,11 @@
 			children = (
 				9292F5CD28DCB46A00C292DA /* ContactListApp.swift */,
 				9292F5CF28DCB46A00C292DA /* ContentView.swift */,
+				9292F5DF28DCB65700C292DA /* ContactsView.swift */,
+				9246F6F628DDDB190045F89D /* ContactRowView.swift */,
+				9292F5E128DCB66A00C292DA /* ProfileView.swift */,
+				9292F5DB28DCB48B00C292DA /* DataStore.swift */,
+				9292F5DD28DCB4B200C292DA /* Person.swift */,
 				9292F5D128DCB46C00C292DA /* Assets.xcassets */,
 				9292F5D328DCB46C00C292DA /* Preview Content */,
 			);
@@ -70,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9292F5C928DCB46A00C292DA /* ContactList */ = {
+		9292F5C928DCB46A00C292DA /* ContactListSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9292F5D828DCB46C00C292DA /* Build configuration list for PBXNativeTarget "ContactList" */;
+			buildConfigurationList = 9292F5D828DCB46C00C292DA /* Build configuration list for PBXNativeTarget "ContactListSwiftUI" */;
 			buildPhases = (
 				9292F5C628DCB46A00C292DA /* Sources */,
 				9292F5C728DCB46A00C292DA /* Frameworks */,
@@ -82,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = ContactList;
+			name = ContactListSwiftUI;
 			productName = ContactList;
-			productReference = 9292F5CA28DCB46A00C292DA /* ContactList.app */;
+			productReference = 9292F5CA28DCB46A00C292DA /* ContactListSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9292F5C528DCB46A00C292DA /* Build configuration list for PBXProject "ContactList" */;
+			buildConfigurationList = 9292F5C528DCB46A00C292DA /* Build configuration list for PBXProject "ContactListSwiftUI" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9292F5C928DCB46A00C292DA /* ContactList */,
+				9292F5C928DCB46A00C292DA /* ContactListSwiftUI */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9292F5D028DCB46A00C292DA /* ContentView.swift in Sources */,
+				9246F6F728DDDB190045F89D /* ContactRowView.swift in Sources */,
+				9292F5DC28DCB48B00C292DA /* DataStore.swift in Sources */,
+				9292F5DE28DCB4B200C292DA /* Person.swift in Sources */,
+				9292F5E028DCB65700C292DA /* ContactsView.swift in Sources */,
+				9292F5E228DCB66A00C292DA /* ProfileView.swift in Sources */,
 				9292F5CE28DCB46A00C292DA /* ContactListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,7 +340,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9292F5C528DCB46A00C292DA /* Build configuration list for PBXProject "ContactList" */ = {
+		9292F5C528DCB46A00C292DA /* Build configuration list for PBXProject "ContactListSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9292F5D628DCB46C00C292DA /* Debug */,
@@ -329,7 +349,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9292F5D828DCB46C00C292DA /* Build configuration list for PBXNativeTarget "ContactList" */ = {
+		9292F5D828DCB46C00C292DA /* Build configuration list for PBXNativeTarget "ContactListSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9292F5D928DCB46C00C292DA /* Debug */,
